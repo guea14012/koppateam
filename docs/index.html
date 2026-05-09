@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -62,10 +62,8 @@
     .app-soon { position: absolute; top: 12px; right: 12px; font-size: 10px; font-weight: 700; background: rgba(255,204,0,.1); color: var(--gold); border: 1px solid rgba(255,204,0,.3); padding: 2px 8px; border-radius: 4px; text-transform: uppercase; letter-spacing: .5px; }
     .app-icon {
       width: 56px; height: 56px; border-radius: 14px;
-      display: flex; align-items: center; justify-content: center;
-      font-size: 26px; margin-bottom: 14px; flex-shrink: 0;
-      background: #0d0d1a;
-      box-shadow: 0 2px 8px rgba(0,0,0,.4);
+      display: block; margin-bottom: 14px; flex-shrink: 0;
+      object-fit: contain;
     }
     .app-name { font-size: 15px; font-weight: 700; margin-bottom: 3px; }
     .app-sub { font-size: 12px; font-weight: 600; margin-bottom: 8px; }
@@ -124,7 +122,7 @@
 
     <div class="app-card clickable" onclick="window.open('https://guea14012.github.io/koppaword-2026/','_blank')" style="border-color:rgba(0,102,255,.5);position:relative;">
       <span style="position:absolute;top:12px;right:12px;font-size:10px;font-weight:700;background:rgba(0,187,68,.15);color:#00bb44;border:1px solid rgba(0,187,68,.4);padding:2px 8px;border-radius:4px;text-transform:uppercase;letter-spacing:.5px">&#10003; Available</span>
-      <div class="app-icon" style="border:1.5px solid rgba(0,102,255,.5);">📝</div>
+      <img src="favicon-word.svg" class="app-icon" alt="KOPPAWORD">
       <span class="app-tag" style="background:rgba(0,102,255,.12);color:#0066ff">Document</span>
       <div class="app-name" style="color:#4499ff">KOPPAWORD</div>
       <div class="app-sub" style="color:#0066ff">Document Editor</div>
@@ -133,7 +131,7 @@
 
     <div class="app-card" style="border-color:rgba(0,187,68,.3);position:relative;">
       <span class="app-soon">Coming Soon</span>
-      <div class="app-icon" style="border:1.5px solid rgba(0,187,68,.5);">📊</div>
+      <img src="favicon-excel.svg" class="app-icon" alt="KOPPAEXCEL">
       <span class="app-tag" style="background:rgba(0,187,68,.12);color:#00bb44">Spreadsheet</span>
       <div class="app-name" style="color:#44dd77">KOPPAEXCEL</div>
       <div class="app-sub" style="color:#00bb44">Spreadsheet Editor</div>
@@ -142,7 +140,7 @@
 
     <div class="app-card clickable" onclick="window.open('https://github.com/guea14012/koppapdf','_blank')" style="border-color:rgba(255,51,85,.3);position:relative;">
       <span class="app-soon">Coming Soon</span>
-      <div class="app-icon" style="border:1.5px solid rgba(255,51,85,.5);">📑</div>
+      <img src="favicon-pdf.svg" class="app-icon" alt="KOPPAPDF">
       <span class="app-tag" style="background:rgba(255,51,85,.12);color:#ff3355">PDF</span>
       <div class="app-name" style="color:#ff6680">KOPPAPDF</div>
       <div class="app-sub" style="color:#ff3355">PDF Suite</div>
@@ -151,7 +149,7 @@
 
     <div class="app-card" style="border-color:rgba(139,47,255,.3);position:relative;">
       <span class="app-soon">Coming Soon</span>
-      <div class="app-icon" style="border:1.5px solid rgba(139,47,255,.5);">🎨</div>
+      <img src="favicon-point.svg" class="app-icon" alt="KOPPAPOINT">
       <span class="app-tag" style="background:rgba(139,47,255,.12);color:#8b2fff">Design</span>
       <div class="app-name" style="color:#bb88ff">KOPPAPOINT</div>
       <div class="app-sub" style="color:#8b2fff">Presentations</div>
@@ -160,7 +158,7 @@
 
     <div class="app-card clickable" onclick="window.open('https://github.com/guea14012/koppabi','_blank')" style="border-color:rgba(255,136,0,.3);position:relative;">
       <span class="app-soon">Coming Soon</span>
-      <div class="app-icon" style="border:1.5px solid rgba(255,136,0,.5);">📈</div>
+      <img src="favicon-bi.svg" class="app-icon" alt="KOPPABI">
       <span class="app-tag" style="background:rgba(255,136,0,.12);color:#ff8800">Analytics</span>
       <div class="app-name" style="color:#ffaa44">KOPPABI</div>
       <div class="app-sub" style="color:#ff8800">Business Intelligence</div>
@@ -169,7 +167,7 @@
 
     <div class="app-card" style="border-color:rgba(0,212,255,.3);position:relative;">
       <span class="app-soon">Coming Soon</span>
-      <div class="app-icon" style="border:1.5px solid rgba(0,212,255,.5);">🎥</div>
+      <img src="favicon-meet.svg" class="app-icon" alt="KOPPAMEET">
       <span class="app-tag" style="background:rgba(0,212,255,.12);color:#00d4ff">Comms</span>
       <div class="app-name" style="color:#44ddff">KOPPAMEET</div>
       <div class="app-sub" style="color:#00d4ff">Video Conferencing</div>
@@ -178,7 +176,7 @@
 
     <div class="app-card" style="border-color:rgba(255,204,0,.3);position:relative;">
       <span class="app-soon">Coming Soon</span>
-      <div class="app-icon" style="border:1.5px solid rgba(255,204,0,.5);">📧</div>
+      <img src="favicon-mail.svg" class="app-icon" alt="KOPPAMAIL">
       <span class="app-tag" style="background:rgba(255,204,0,.12);color:#ffcc00">Email</span>
       <div class="app-name" style="color:#ffdd44">KOPPAMAIL</div>
       <div class="app-sub" style="color:#ffcc00">Email Client</div>
@@ -187,7 +185,7 @@
 
     <div class="app-card clickable" onclick="window.open('https://github.com/guea14012/koppanotes','_blank')" style="border-color:rgba(255,102,170,.3);position:relative;">
       <span class="app-soon">Coming Soon</span>
-      <div class="app-icon" style="border:1.5px solid rgba(255,102,170,.5);">📒</div>
+      <img src="favicon-notes.svg" class="app-icon" alt="KOPPANOTES">
       <span class="app-tag" style="background:rgba(255,102,170,.12);color:#ff66aa">Notes</span>
       <div class="app-name" style="color:#ff99cc">KOPPANOTES</div>
       <div class="app-sub" style="color:#ff66aa">Notes &amp; Wiki</div>
@@ -196,7 +194,7 @@
 
     <div class="app-card" style="border-color:rgba(0,255,136,.3);position:relative;">
       <span class="app-soon">Coming Soon</span>
-      <div class="app-icon" style="border:1.5px solid rgba(0,255,136,.5);">📋</div>
+      <img src="favicon-board.svg" class="app-icon" alt="KOPPABOARD">
       <span class="app-tag" style="background:rgba(0,255,136,.12);color:#00ff88">PM</span>
       <div class="app-name" style="color:#44ffaa">KOPPABOARD</div>
       <div class="app-sub" style="color:#00ff88">Project Management</div>
@@ -205,7 +203,7 @@
 
     <div class="app-card" style="border-color:rgba(170,102,255,.3);position:relative;">
       <span class="app-soon">Coming Soon</span>
-      <div class="app-icon" style="border:1.5px solid rgba(170,102,255,.5);">🖼️</div>
+      <img src="favicon-wall.svg" class="app-icon" alt="KOPPAWALL">
       <span class="app-tag" style="background:rgba(170,102,255,.12);color:#aa66ff">Canvas</span>
       <div class="app-name" style="color:#cc99ff">KOPPAWALL</div>
       <div class="app-sub" style="color:#aa66ff">Digital Whiteboard</div>
@@ -214,7 +212,7 @@
 
     <div class="app-card" style="border-color:rgba(102,170,255,.3);position:relative;">
       <span class="app-soon">Coming Soon</span>
-      <div class="app-icon" style="border:1.5px solid rgba(102,170,255,.5);">💾</div>
+      <img src="favicon-drive.svg" class="app-icon" alt="KOPPADRIVE">
       <span class="app-tag" style="background:rgba(102,170,255,.12);color:#66aaff">Storage</span>
       <div class="app-name" style="color:#88ccff">KOPPADRIVE</div>
       <div class="app-sub" style="color:#66aaff">File Storage</div>
@@ -223,7 +221,7 @@
 
     <div class="app-card clickable" onclick="window.open('https://github.com/guea14012/koppateam','_blank')" style="border-color:rgba(0,212,255,.4);background:rgba(0,212,255,.03);position:relative;">
       <span style="position:absolute;top:12px;right:12px;font-size:10px;font-weight:700;background:rgba(0,187,68,.15);color:#00bb44;border:1px solid rgba(0,187,68,.4);padding:2px 8px;border-radius:4px;text-transform:uppercase;letter-spacing:.5px">&#10003; Available</span>
-      <div class="app-icon" style="border:1.5px solid rgba(0,212,255,.6); background:linear-gradient(135deg,rgba(0,212,255,.15),rgba(139,47,255,.15));">🏠</div>
+      <img src="favicon.svg" class="app-icon" alt="KOPPATEAM">
       <span class="app-tag" style="background:rgba(0,212,255,.1);color:#00d4ff">Hub</span>
       <div class="app-name" style="color:#00d4ff">KOPPATEAM Hub</div>
       <div class="app-sub" style="color:#00aacc">App Launcher</div>
